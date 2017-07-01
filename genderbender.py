@@ -6,10 +6,11 @@ X = [[166,60,34],[186,80,44],[170,72,40],[160,75,38],[186,88,44],[168,70,34],[19
 
 Y= ['female','male','female','female','male','female','male','female','male','male','female']
 
-classifier = tree.DecisionTreeClassifier()
+clf = tree.DecisionTreeClassifier()
 
-classifier = classifier.fit(X,Y)
+clf = clf.fit(X, Y)
 
-prediction = classifier.predict([[185,100,43]])
+prediction = clf.predict([[187, 79, 44]])
 
-print prediction
+print(prediction)
+
